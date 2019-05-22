@@ -22,12 +22,12 @@ struct Vesh{
 
 int main()
 {
-	ifstream fin("C:/Users/egork/data/ks_100_0");
+	ifstream fin("./data/ks_100_0");
 	int N,C,i,j,f=1,balast,N1,acost,kol,kol1,f1; //N - Number of items, C - Capasity of backpack, i,j - counter, f - flag, balast - checking for "bad" items, N1 - new N, acost - cost of the item
 	fin>>N>>C;
 	N1=N;
 	Vesh V[N],Q;
-	j=0; 
+	j=0;
 	for(i=0;i<N;i++) // inserting and koefficienting
 	{
 		fin>>acost>>balast;
@@ -145,7 +145,7 @@ int main()
 			zn=zn-V[f].P;
 			cn=cn+V[f].W;
 			U=U-V[f].P;
-			i=f+1;	
+			i=f+1;
 		}
 	}
 	// giving the result
